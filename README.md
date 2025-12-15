@@ -1,5 +1,5 @@
-# korber-pharma-managed-service
-A lightweight Spring Boot microservice that maintains pharmaceutical inventory by product and batch, supports batch-level expiry tracking, and exposes REST endpoints to query and update inventory. Built with Spring Data JPA and an H2 in-memory database.
+# korber-pharma-managed-services
+A lightweight Spring Boot microservice that maintains pharmaceutical inventory by product and batch, supports batch-level expiry tracking, and exposes REST endpoints. It has two major backend modules. Inventory Management Service and Order Management Service. They can be run independently or together as part of a managed services suite. These services are designed for easy integration into larger systems and they can communicate with each other asynchronously.
 
 
 ## Features
@@ -25,7 +25,7 @@ This microservice manages product inventory and batch reservations. It exposes A
 
 ---
 
-## 🚀 Project Setup[target](korber-pharma-inventory-service/target)
+## 🚀 Project Setup
 
 1. **Clone the repository**
    ```bash
