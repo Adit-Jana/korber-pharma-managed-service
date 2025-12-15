@@ -1,0 +1,13 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="3-load-products" author="dev">
+        <loadData file="db/data/products.csv" tableName="products" separator=","/>
+    </changeSet>
+
+    <changeSet id="4-load-batches" author="dev">
+        <loadData file="db/data/batches.csv" tableName="batches" separator="," dateFormat="yyyy-MM-dd"/>
+    </changeSet>
+</databaseChangeLog>
